@@ -1,0 +1,10 @@
+{
+  "name": "BharatSamvaad - India WhatsApp Community",
+  "description": "Indian community WhatsApp platform with end-to-end encrypted private group chats, RWA announcements, local mohalla hubs, UPI payments, and multilingual support.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

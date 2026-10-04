@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --whatsapp-green: #00a884;
+    --whatsapp-dark-green: #075e54;
+    --whatsapp-teal: #128c7e;
+    --whatsapp-light-green: #25d366;
+    --whatsapp-bg-light: #efeae2;
+    --whatsapp-bg-dark: #0b141a;
+    --whatsapp-panel-dark: #111b21;
+    --whatsapp-chat-bubble-out: #d9fdd3;
+    --whatsapp-chat-bubble-in: #ffffff;
+    --whatsapp-chat-bubble-dark-out: #005c4b;
+    --whatsapp-chat-bubble-dark-in: #202c33;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom WhatsApp style chat pattern */
+.whatsapp-chat-bg-dark {
+  background-color: #0b141a;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.02) 1px, #0b141a 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.whatsapp-chat-bg-light {
+  background-color: #efeae2;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    radial-gradient(rgba(0, 0, 0, 0.03) 1px, #efeae2 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Custom slim scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
